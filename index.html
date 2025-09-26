@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a0f3c, #1c2e70);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      position: relative;
+    }
+
+    .banner {
+      background: url('https://i.supaimg.com/365cd4db-fc7e-4a89-80fc-b519c44b0351.jpg') no-repeat center center/cover;
+      height: 250px;
+      border-radius: 0 0 15px 15px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(0,0,0,0.3);
+      border-radius: 15px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      border-left: 6px solid #ffcb05;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: rgba(30,42,96,0.9);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    audio {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ffcb05;
+      color: #10194d;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffdb4d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="banner"></div>
+  </header>
+
+  <!-- Último Episódio -->
+  <section>
+    <h2>Último episódio lançado</h2>
+    <div class="card">
+      <p><strong>Título:</strong> Episódio 2 - Prova SABE: O Que É e Para Que Serve</p>
+      <audio controls preload="metadata">
+        <source src="ep2.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+      <a href="https://open.spotify.com/show/1Z3hWkBYbhlJASxSdLmE07" class="btn" target="_blank" rel="noopener noreferrer">
+        Ouça os episódios completos no Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- Episódios já lançados -->
+  <section>
+    <h2>Episódios já lançados</h2>
+    <div class="card">
+      <p><strong>Título:</strong> Episódio 1 - Boas-vindas</p>
+      <audio controls preload="metadata">
+        <source src="angel.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+      <a href="https://open.spotify.com/show/1Z3hWkBYbhlJASxSdLmE07" class="btn" target="_blank" rel="noopener noreferrer">
+        Ouça os episódios completos no Spotify
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
